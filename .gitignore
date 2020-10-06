@@ -1,0 +1,11 @@
+.idea
+tarantool_indexes_compare.iml
+tmp/tree/*
+!tmp/tree/.keep
+tmp/hash/*
+!tmp/hash/.keep
+gun
+token.txt
+logs
+tank_errors.log
+phout.log
