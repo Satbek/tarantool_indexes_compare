@@ -5,7 +5,7 @@ tmp/tree/*
 tmp/hash/*
 !tmp/hash/.keep
 gun
-token.txt
+*.txt
 logs
 tank_errors.log
 phout.log

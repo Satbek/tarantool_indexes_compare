@@ -3,20 +3,20 @@ pools:
     gun:
       type: gun
       target:
-         tree: host.docker.internal:3301
-         hash: host.docker.internal:3302
+         tree: host.docker.internal:3301 #change for localhost:3301 if you use linux
+         hash: host.docker.internal:3302 #change for localhost:3302 if you use linux
     ammo:
       type: tarantool_call_provider
       source:
         type: file
-        path: ./ammo.txt
+        path: ./get_by_secondary_hash.txt #change to necessary ammo file
     result:
       type: phout
       destination: ./phout.log
-    rps:                             # shooting schedule
-      type: const                     # linear growth
-      ops: 1500                       # from 1 response per second
-      duration: 3m                  # for 60 seconds
+    rps: #change load params here (by default it runs constant load at 1500 rps for 3 minutes)
+      type: const
+      ops: 1500
+      duration: 3m
     startup:
       type: once
-      times: 50
+      times: 50 #change workers count here

@@ -1,6 +1,0 @@
-{"Type":"hash","Method":"replace","Params":[["pk", "name", "some data"]]}
-{"Type":"hash","Method":"get_by_pk","Params":["pk"]}
-{"Type":"hash","Method":"get_by_secondary","Params":["name"]}
-{"Type":"tree","Method":"replace","Params":[["pk", "name", "some data"]]}
-{"Type":"tree","Method":"get_by_pk","Params":["pk"]}
-{"Type":"tree","Method":"get_by_secondary","Params":["name"]}

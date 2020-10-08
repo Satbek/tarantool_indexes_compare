@@ -15,8 +15,3 @@ telegraf:
   config: monitoring.xml
   enabled: false
   package: yandextank.plugins.Telegraf
-
-overload:
-  token_file: token.txt
-  job_name: tnt_hash_tree_indexes_compare
-  job_dsc: tarantool hash/tree indexes compare
